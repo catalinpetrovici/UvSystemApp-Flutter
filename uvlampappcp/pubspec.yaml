@@ -1,0 +1,30 @@
+name: uvlampappcp
+description: A new Flutter application.
+
+
+publish_to: 'Petrovici Catalin-Cristian'
+
+version: 2.1.2+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  audioplayers: ^0.16.1
+  percent_indicator: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - images/
