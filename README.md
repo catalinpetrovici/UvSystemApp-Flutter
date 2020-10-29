@@ -1,2 +1,2 @@
-# Aplicatie-Uv-System
- Aplicatie de monitorizare si control a unui sistem cu lampi UV
+# Aplicație-Uv-System
+ Aplicație de monitorizare și control a unui sistem cu lămpi UV
