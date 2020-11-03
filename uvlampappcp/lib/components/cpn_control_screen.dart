@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uvlampappcp/Screens/constants.dart';
 
 class ButonMid extends StatelessWidget {
-  ButonMid(
+  const ButonMid(
       {@required this.onPress, @required this.text, @required this.colour});
 
   final Function onPress;
@@ -40,7 +40,7 @@ class ButonMid extends StatelessWidget {
 }
 
 class TextMid extends StatelessWidget {
-  TextMid({@required this.selectednumber, @required this.textmin});
+  const TextMid({@required this.selectednumber, @required this.textmin});
 
   final String selectednumber;
   final String textmin;
@@ -82,7 +82,7 @@ class TextMid extends StatelessWidget {
 }
 
 class ButonBot extends StatelessWidget {
-  ButonBot(
+  const ButonBot(
       {@required this.onPress, @required this.text, @required this.colour});
 
   final Function onPress;
@@ -126,18 +126,18 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(45);
 
-  CustomAppBar(
-      {this.LeftIcon,
-      this.LeftOnTap,
+  const CustomAppBar(
+      {this.lefticon,
+      this.leftontap,
       @required this.text,
-      this.RightIcon,
-      this.RightOnTap});
+      this.righticon,
+      this.rightontap});
 
-  final Icon LeftIcon;
-  final Function LeftOnTap;
+  final Icon lefticon;
+  final Function leftontap;
   final String text;
-  final Icon RightIcon;
-  final Function RightOnTap;
+  final Icon righticon;
+  final Function rightontap;
 
   @override
   Widget build(BuildContext context) {
@@ -147,15 +147,15 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: Text('$text'),
       ),
       leading: GestureDetector(
-        child: LeftIcon,
-        onTap: LeftOnTap,
+        child: lefticon,
+        onTap: leftontap,
       ),
       actions: <Widget>[
         Padding(
           padding: const EdgeInsets.only(right: 15),
           child: GestureDetector(
-            onTap: RightOnTap,
-            child: RightIcon,
+            onTap: rightontap,
+            child: righticon,
           ),
         ),
       ],

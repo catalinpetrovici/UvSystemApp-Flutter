@@ -24,11 +24,11 @@ class _ControlScreenState extends State<ControlScreen> {
           backgroundColor: Color(backgroundAppColor),
           appBar: CustomAppBar(
             text: 'Sistem UV',
-            LeftIcon: Icon(Icons.arrow_back_ios),
-            LeftOnTap: () {},
-            RightIcon: Icon(Icons.info),
-            RightOnTap: () {
-              Navigator.pushNamed(context, infoControlScreen.id);
+            lefticon: Icon(Icons.arrow_back_ios),
+            leftontap: () {},
+            righticon: Icon(Icons.info),
+            rightontap: () {
+              Navigator.pushNamed(context, InfoControlScreen.id);
             },
           ),
           body: SafeArea(

@@ -6,15 +6,14 @@ import 'package:flutter/widgets.dart';
 import 'package:uvlampappcp/Screens/constants.dart';
 import 'package:uvlampappcp/components/cpn_control_screen.dart';
 import 'package:uvlampappcp/components/cpn_infocontrol_screen.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 
-class infoControlScreen extends StatefulWidget {
+class InfoControlScreen extends StatefulWidget {
   static const String id = 'infocontrol_screen';
   @override
-  _infoControlScreenState createState() => _infoControlScreenState();
+  _InfoControlScreenState createState() => _InfoControlScreenState();
 }
 
-class _infoControlScreenState extends State<infoControlScreen> {
+class _InfoControlScreenState extends State<InfoControlScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,12 +23,12 @@ class _infoControlScreenState extends State<infoControlScreen> {
           //backgroundColor: Color(backgroundAppColor),
           appBar: CustomAppBar(
             text: 'Sistem UV',
-            LeftIcon: Icon(Icons.arrow_back_ios),
-            LeftOnTap: () {
+            lefticon: Icon(Icons.arrow_back_ios),
+            leftontap: () {
               Navigator.pop(context);
             },
-            RightIcon: Icon(Icons.refresh),
-            RightOnTap: () {
+            righticon: Icon(Icons.refresh),
+            rightontap: () {
               Navigator.pop(context);
             },
           ),
@@ -119,8 +118,8 @@ class _infoControlScreenState extends State<infoControlScreen> {
                         right: 20,
                         left: 5,
                         stringicon: Icons.stop_circle_outlined,
-                        toptextindicator: 'Numar apăsări',
-                        midtextindicator: 'Buton urgentă :',
+                        toptextindicator: 'Număr apăsări',
+                        midtextindicator: 'Buton urgență :',
                         bottextindicator: '35',
                       ),
                     )

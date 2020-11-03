@@ -6,7 +6,7 @@ import 'package:percent_indicator/percent_indicator.dart';
 import 'package:uvlampappcp/Screens/constants.dart';
 
 class DataShowInfoScreen extends StatelessWidget {
-  DataShowInfoScreen({
+  const DataShowInfoScreen({
     this.cardChild,
     this.cardChildren,
     this.columncrossaxisalignment,
@@ -58,7 +58,7 @@ class DataShowInfoScreen extends StatelessWidget {
 }
 
 class PercentIndicatorDataShowInfoScreen extends StatelessWidget {
-  PercentIndicatorDataShowInfoScreen(
+  const PercentIndicatorDataShowInfoScreen(
       {this.stringicon,
       this.toptextindicator,
       this.midtextindicator,
@@ -120,7 +120,7 @@ class PercentIndicatorDataShowInfoScreen extends StatelessWidget {
 }
 
 class ShortDataShowInfoScreen extends StatelessWidget {
-  ShortDataShowInfoScreen(
+  const ShortDataShowInfoScreen(
       {this.stringicon,
       this.toptextindicator,
       this.midtextindicator,

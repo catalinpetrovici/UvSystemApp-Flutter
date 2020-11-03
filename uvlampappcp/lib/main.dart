@@ -10,10 +10,13 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: Colors.black,
-        //systemNavigationBarColor: Colors.black,
+        systemNavigationBarColor: Colors.black,
       ),
     );
     return MaterialApp(
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: ControlScreen.id,
       routes: {
         ControlScreen.id: (context) => ControlScreen(),
-        infoControlScreen.id: (context) => infoControlScreen(),
+        InfoControlScreen.id: (context) => InfoControlScreen(),
         // LoginScreen.id: (context) => LoginScreen(),
         // RegistrationScreen.id: (context) => RegistrationScreen(),
         // ChatScreen.id: (context) => ChatScreen(),
