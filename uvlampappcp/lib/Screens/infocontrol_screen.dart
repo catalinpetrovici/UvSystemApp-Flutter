@@ -51,17 +51,20 @@ class _InfoControlScreenState extends State<InfoControlScreen> {
                     cardChildren: <Widget>[
                       Text(
                         'Ultima sincronizare:',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
                         textAlign: TextAlign.right,
                       ),
                       Text(
                         '27-10-2020',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
                         textAlign: TextAlign.right,
                       ),
                       Text(
                         '10:23 AM',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold),
                         textAlign: TextAlign.right,
                       )
                     ],

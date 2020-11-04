@@ -73,6 +73,8 @@ class PercentIndicatorDataShowInfoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int _resizetext = 32;
+
     return DataShowInfoScreen(
       padding: EdgeInsets.only(top: 10, right: 20, left: 20, bottom: 10),
       columnmainaxisalignment: MainAxisAlignment.start,
@@ -93,7 +95,9 @@ class PercentIndicatorDataShowInfoScreen extends StatelessWidget {
         Text(
           ' $toptextindicator',
           textAlign: TextAlign.left,
-          style: TextStyle(fontSize: MediaQuery.of(context).size.width / 35),
+          style: TextStyle(
+              fontSize: MediaQuery.of(context).size.width / _resizetext,
+              fontWeight: FontWeight.bold),
         ),
         LinearPercentIndicator(
           width: MediaQuery.of(context).size.width * 0.6,
@@ -104,7 +108,9 @@ class PercentIndicatorDataShowInfoScreen extends StatelessWidget {
           trailing: Text(
             ' $midtextindicator',
             textAlign: TextAlign.left,
-            style: TextStyle(fontSize: MediaQuery.of(context).size.width / 35),
+            style: TextStyle(
+                fontSize: MediaQuery.of(context).size.width / _resizetext,
+                fontWeight: FontWeight.bold),
           ),
           linearStrokeCap: LinearStrokeCap.roundAll,
           progressColor: Color(backgroundAppBarColor),
@@ -112,7 +118,9 @@ class PercentIndicatorDataShowInfoScreen extends StatelessWidget {
         Text(
           ' $bottextindicator',
           textAlign: TextAlign.left,
-          style: TextStyle(fontSize: MediaQuery.of(context).size.width / 35),
+          style: TextStyle(
+              fontSize: MediaQuery.of(context).size.width / _resizetext,
+              fontWeight: FontWeight.bold),
         ),
       ],
     );
@@ -137,6 +145,8 @@ class ShortDataShowInfoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int _resizetext = 32;
+
     return DataShowInfoScreen(
       padding: EdgeInsets.only(top: 10, right: right, left: left, bottom: 10),
       columnmainaxisalignment: MainAxisAlignment.start,
@@ -156,17 +166,23 @@ class ShortDataShowInfoScreen extends StatelessWidget {
         Text(
           '$toptextindicator',
           textAlign: TextAlign.end,
-          style: TextStyle(fontSize: MediaQuery.of(context).size.width / 35),
+          style: TextStyle(
+              fontSize: MediaQuery.of(context).size.width / _resizetext,
+              fontWeight: FontWeight.bold),
         ),
         Text(
           '$midtextindicator',
           textAlign: TextAlign.end,
-          style: TextStyle(fontSize: MediaQuery.of(context).size.width / 35),
+          style: TextStyle(
+              fontSize: MediaQuery.of(context).size.width / _resizetext,
+              fontWeight: FontWeight.bold),
         ),
         Text(
           '$bottextindicator',
           textAlign: TextAlign.end,
-          style: TextStyle(fontSize: MediaQuery.of(context).size.width / 35),
+          style: TextStyle(
+              fontSize: MediaQuery.of(context).size.width / _resizetext,
+              fontWeight: FontWeight.bold),
         ),
       ],
     );
